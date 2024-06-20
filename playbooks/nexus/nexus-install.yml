@@ -1,0 +1,13 @@
+---
+- name: Installing Nexus
+  hosts: localhost
+  become_user: nexus
+  become: yes
+  tasks:
+    - name: Install Nexus
+      shell: echo "Installing Nexus"
+    
+    - name: Start Nexus
+      shell: echo "Starting Nexus"
+
+      
